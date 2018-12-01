@@ -46,6 +46,23 @@ color:#333;
 export const SearchWrapper=styled.div`
 float:left;
 position:relative;
+.slide-enter{
+  width:160px;
+  transition:all .2s ease-out;
+}
+
+.slide-enter-active{
+  width:240px;
+}
+
+.slide-exit{
+width:240px;
+transition:all .2s ease-out
+}
+
+.slide-exit-active{
+  width:160px;
+}
 .iconfont {
   position:absolute;
   right:5px;
@@ -54,6 +71,10 @@ position:relative;
   line-height:30px;
   border-radius:15px;
   text-align:center;
+  &.focused{
+    background:#777;
+    color:#fff;
+  }
 }
 
 `
@@ -71,8 +92,11 @@ margin-top:12px;
 padding:0 20px;
 box-sizing:border-box;
 font-size:14px;
-::placeholder{
+&::placeholder{
   color:#999;
+}
+&.focused{
+  width:240px;
 }
 
 `
@@ -102,4 +126,6 @@ font-size:14px;
   background:#ec6149;
 }
 `
+
+
 
