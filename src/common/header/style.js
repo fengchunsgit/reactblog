@@ -43,7 +43,20 @@ color:#333;
   color:#ea6f5a;
 }
 `
+export const SearchWrapper=styled.div`
+float:left;
+position:relative;
+.iconfont {
+  position:absolute;
+  right:5px;
+  bottom:2px;
+  width:30px;
+  line-height:30px;
+  border-radius:15px;
+  text-align:center;
+}
 
+`
 export const NavSearch=styled.input.attrs({
 placeholder:'搜索'
 })`
@@ -89,3 +102,4 @@ font-size:14px;
   background:#ec6149;
 }
 `
+
